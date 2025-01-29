@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Todo List</h1>
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          placeholder="Enter a task"
+          id="tf-input"
+          class="textfield"
+        />
+        <button onclick="addTask()" id="add-button" class="button">
+          Add Task
+        </button>
+      </div>
+      <div>
+        <ul id="task-container">
+          <li id="task-1" class="list-item">
+            Task 1
+            <button onclick="editTask('task-1')" class="edit-button">
+              Edit
+            </button>
+            <button onclick="deleteTask('task-1')" class="delete-button">
+              Delete
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</html>
