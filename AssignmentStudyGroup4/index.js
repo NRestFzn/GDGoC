@@ -25,7 +25,7 @@ const readNote = () => {
 
 const updateNote = (id, heading, description) => {
   notes.filter((note) => {
-    if (note.id === id) {
+    if (note.id == id) {
       note.heading = heading;
       note.description = description;
     }
